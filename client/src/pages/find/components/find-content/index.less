@@ -1,0 +1,85 @@
+ul, li, div, p{
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+.first {
+  display: flex;
+  .content{
+    // border: 1px solid red;
+    ul{
+      list-style: none;
+      li{
+        margin-top: 20px;
+        cursor: pointer;
+        .content-message{
+          display: flex;
+          img{
+            margin: 10px 10px 0 15px;
+            width: 160px;
+            height: 100px;
+            // border: 1px solid green;
+          }
+        }
+        .content-bottom{
+          span{
+            margin-left: 10px;
+            .icon-zuanshix{
+              color: rgb(19, 212, 212);
+            }
+            .icon-xiaoxi{
+              color: rgb(26, 235, 148);
+              font-size: large;
+            }
+            .icon-aixin{
+              color: rgb(189, 31, 31);
+            }
+          }
+        }
+      }
+    }
+  }
+  .nav{
+    width: 340px;
+    border: 1px solid rgba(22, 160, 45, 0.5);
+    .nav-content{
+      list-style: none;
+      .nav-content-myself{
+        margin-top: 20px;
+        h3{
+          width: 100%;
+          text-align: center;
+        }
+        .app-account{
+          color: floralwhite;
+          padding-left: 40px;
+          i{
+            font-size: xx-large;
+            cursor: pointer;
+            .erweima{
+              position: fixed;
+              left: calc(40% - 50px);
+              top: calc(30% - 50px);
+              // border: 1px solid red;
+              img{
+                width: 300px;
+              }
+            }
+          }
+          .icon-QQ{
+            color: rgb(48, 187, 187);
+          }
+          .icon-weixing{
+            color: green;
+          }
+          .icon-shejiaotubiao-46{
+            color: blue;
+          }
+          .icon-douyin_douyinfensi{
+            color: rgb(155, 22, 22);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+ul, li, div, p{
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+.front-wrapper {
+  display: flex;
+  height: 88vh;
+  .front-content{
+    width: 799px;
+    overflow-y: scroll;
+    &::-webkit-scrollbar{
+        color: transparent;
+    }
+    // border: 1px solid green;
+    ul{
+      list-style: none;
+      li{
+        margin-top: 20px;
+        cursor: pointer;
+        margin-left: 20px;
+        .content{
+          margin-bottom: 20px;
+          p{
+            margin-right: 100px;
+          }
+        }
+        .content-bottom{
+          span{
+            margin-left: 10px;
+            .icon-07{
+              color: rgba(19, 157, 212, 0.8);
+            }
+            .icon-xiaoxi{
+              color: rgb(26, 235, 148);
+              font-size: large;
+            }
+            .icon-aixin{
+              color: rgb(189, 31, 31);
+            }
+          }
+        }
+      }
+    }
+  }
+  .front-nav-wrapper{
+    width: 200px;
+    height: 88vh;
+    border: 1px solid rgba(197, 164, 18, 0.3);
+ }
+}

@@ -1,0 +1,43 @@
+.message-wrapper{
+    // background-color: rgb(175, 190, 199);
+    height: 88vh;
+    display: flex;
+    .message-content{
+        width: 100%;
+        overflow-y: scroll;
+        &::-webkit-scrollbar{
+            color: transparent;
+        }
+        .message-input{
+            padding-right: 100px;
+            margin-bottom: 40px;
+        }
+    }
+    .message-number{
+        position: relative;
+        .time{
+            position: absolute;
+            opacity: 0;
+            left: 0;
+            top: 0;
+        }
+        &:hover{
+            color: rgba(62, 155, 158, 0.1) !important;
+            .time{
+                color: rgb(21, 141, 197);
+                opacity: 1;
+            }
+        }
+    }
+    .user-info{
+        // width: 189px;
+        height: 1200px;
+        margin-left: 10px;
+        border-left: 1px dotted rgb(126, 44, 44);
+        h2{
+            width: 200px;
+            text-align: center;
+            color: rgb(31, 138, 102);
+        }
+    }
+}

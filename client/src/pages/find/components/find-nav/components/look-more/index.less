@@ -1,0 +1,59 @@
+
+// @keyframes show {
+  // 0%{opacity: 0;}
+  // 100%{opacity: 1;}
+// }
+.lookmore{
+  // border: 1px solid red;
+  h3{
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(24, 112, 185);
+  }
+  .recommend-list{
+    // border: 1px solid red;
+    ul{
+      list-style: none;
+      li{
+        background: rgba(133, 161, 165, 0.1);
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        height: 60px;
+        cursor: pointer;
+        .top{
+          padding-top: 10px;
+          display: flex;
+          h2{
+            width: 100%;
+            text-align: center;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient:vertical;
+            -webkit-line-clamp: 1; 
+          }
+        }
+        .bottom {
+          display: none;
+          padding-top: 10px;
+          margin-left: 10px;
+          color: rgb(221, 94, 20);
+        }
+        &:hover{
+          .top{
+            display: none;
+          }
+          .bottom{
+            display: block;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient:vertical;
+            -webkit-line-clamp: 2; 
+          }
+        }
+      }
+    }
+  }
+}
